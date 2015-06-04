@@ -67,11 +67,20 @@ class Media
     /**
      * constructor
      *
-     * @param array $config
+     * <pre>
+     * $config:
+     *
+     * array(
+     *  'app_id' => YOUR_APPID,  // string mandatory;
+     *  'secret' => YOUR_SECRET, // string mandatory;
+     * )
+     * </pre>
+     *
+     * @param array $config configuration array
      */
     public function __construct(array $config)
     {
-        $this->http = new Http(new AccessToken($config['app_id'], $config['secret']));
+        $this->http = new Http(new AccessToken($config));
     }
 
     /**
