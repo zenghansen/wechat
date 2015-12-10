@@ -1,6 +1,6 @@
 <?php
 /**
- * Input.php
+ *  Input.php
  *
  * Part of Overtrue\Wechat.
  *
